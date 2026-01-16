@@ -2,13 +2,27 @@
 
 A Raycast extension for interacting with Markdown notes in your Obsidian vault.
 
-## Usage
+## Commands
+
+### Track Time
+
+Log timestamped entries to track what you worked on.
 
 1. Trigger "Track Time" command in Raycast
 2. Type what you worked on
 3. Press Enter to log the entry
 
-Entries are logged in the format `- HH:mm: Your entry` under a `## Tracking` section in your daily note.
+Entries are logged in the format `- HH:mm: Your entry` under a `## Tracking` section.
+
+### Log
+
+Add simple entries without timestamps.
+
+1. Trigger "Log" command in Raycast
+2. Type your entry
+3. Press Enter to log the entry
+
+Entries are logged in the format `- Your entry` under a `## Log` section.
 
 ## Configuration
 
@@ -18,7 +32,7 @@ Entries are logged in the format `- HH:mm: Your entry` under a `## Tracking` sec
 
 ## Daily Note Format
 
-The extension writes to `daily/YYYY-MM-DD.md` in your vault.
+Both commands write to `daily/YYYY-MM-DD.md` in your vault.
 
 If the file doesn't exist, it creates:
 
@@ -30,9 +44,9 @@ tags:
 
 # YYYY-MM-DD
 
-## Tracking
+## Section
 
-- HH:mm: Your entry
+- Your entry
 ```
 
-If the file exists but has no `## Tracking` section, the section is appended. If the section exists, entries are added at the end of it.
+If the file exists but has no matching section, the section is appended. If the section exists, entries are added at the end of it.
