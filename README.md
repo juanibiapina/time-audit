@@ -1,6 +1,6 @@
-# Time Audit
+# Notes
 
-A Raycast extension to quickly log timestamped work entries to your Obsidian daily notes.
+A Raycast extension for interacting with Markdown notes in your Obsidian vault.
 
 ## Usage
 

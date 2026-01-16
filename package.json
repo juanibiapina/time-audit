@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "time-audit",
-  "title": "Time Audit",
-  "description": "Implements Time Audit Method by Dan Martell",
+  "name": "notes",
+  "title": "Notes",
+  "description": "Raycast extension for interacting with Markdown notes",
   "icon": "extension-icon.png",
   "author": "juanibiapina",
   "platforms": [
