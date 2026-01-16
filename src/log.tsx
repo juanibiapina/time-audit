@@ -1,4 +1,4 @@
-import { List, ActionPanel, Action, showToast, Toast, closeMainWindow } from "@raycast/api";
+import { List, ActionPanel, Action, showToast, Toast, closeMainWindow, popToRoot } from "@raycast/api";
 import { useState } from "react";
 import { appendToSection } from "./daily-note";
 
@@ -28,6 +28,7 @@ export default function Command() {
         message: entry,
       });
 
+      await popToRoot();
       await closeMainWindow();
     } catch (error) {
       await showToast({
